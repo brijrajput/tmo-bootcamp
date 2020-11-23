@@ -1,9 +1,18 @@
 <html>
 <head>
-
+function incrementValue()
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+}
 </head>
 <body>
 <h1>Hello TMO Bootcamp<h1>
-  <button> Submit </button>
+  <form>
+   <input type="text" id="number" value="0"/>
+   <input type="button" onclick="incrementValue()" value="Increment Value" />
+  </form>
 </body>
 </html>
