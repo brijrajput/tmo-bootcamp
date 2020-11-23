@@ -1,5 +1,6 @@
 <html>
 <head>
+    <script>
 function incrementValue()
 {
     var value = parseInt(document.getElementById('number').value, 10);
@@ -7,6 +8,7 @@ function incrementValue()
     value++;
     document.getElementById('number').value = value;
 }
+    </script>
 </head>
 <body>
 <h1>Hello TMO Bootcamp<h1>
@@ -14,5 +16,6 @@ function incrementValue()
    <input type="text" id="number" value="0"/>
    <input type="button" onclick="incrementValue()" value="Increment Value" />
   </form>
+    
 </body>
 </html>
